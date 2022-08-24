@@ -1,13 +1,15 @@
-import { Navbar } from './componets/navegacion/Navbar';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import  NavBar  from './componets/navegacion/Navbar';
 
-
-export const  App = () => {
+function  App  () {
   return (
-    <div className="App">
-      <h1>hola</h1>
-      <Navbar />
-    </div>
+    <>
+     <NavBar />
+    
+    </>
+     
     
   );
 }
