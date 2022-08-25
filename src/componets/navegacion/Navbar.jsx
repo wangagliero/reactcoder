@@ -5,6 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { AiFillCar } from "react-icons/ai";
 import CarWidget from './CarWidget';
+
+
+
 function NavBar() {
   
   return (
@@ -14,7 +17,6 @@ function NavBar() {
         <Navbar.Brand href="#home">
           <AiFillCar/>
           Carcomm
-         
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -33,6 +35,7 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand href="#home">
+        
           <CarWidget/>
           </Navbar.Brand>
       </Container>
