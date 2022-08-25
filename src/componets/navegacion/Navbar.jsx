@@ -4,13 +4,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { AiFillCar } from "react-icons/ai";
+import CarWidget from './CarWidget';
 function NavBar() {
+  
   return (
+    
     <Navbar bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="#home">
           <AiFillCar/>
           Carcomm
+         
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -28,11 +32,15 @@ function NavBar() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
+        <Navbar.Brand href="#home">
+          <CarWidget/>
+          </Navbar.Brand>
       </Container>
     </Navbar>
+    
   );
+ 
 }
 
 export default NavBar;
-
 
