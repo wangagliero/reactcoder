@@ -13,7 +13,7 @@ function  App  () {
     <div className='App'> 
      <NavBar />
     
-    <ItemListComponent />
+    <ItemListComponent greeting={"este mensaje"}/>
 
     
 
