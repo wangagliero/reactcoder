@@ -1,41 +1,27 @@
 
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import { useState } from 'react';
+import React from 'react'
+import { useState } from 'react'
 
- const Counter = ({stock, onAdd}) => {
-     
-      const [ count,setCount] = useState (1)
 
-      function add(){
-        if(count < stock)
-           setCount(count + 1)
-      }
-      function substract (){
-          if(count > 0)
-            setCount(count -1)
-      }
-      function reset (){
-             setCount (1)
-      }
+
+export const Counter = (stock,inicial,onAdd) => {
+  const [cot, setCount] = useState(inicial)
+  const Add = ()=>{
+    setCount (cot+1)
+  }
+  const Res = ()=>{
+    setCount (cot-1)
+  }
+
   return (
-    <div>
-       <div className='counter-box'>
-         <h1>Counter</h1>
-         <p>Stock: {stock}</p>
-         <p>Cantidad: {count} </p>
-
-         <div>
-          <Button variant="outline-primary" onClick={substract} >-</Button>
-          <Button variant="outline-secondary"onClick={reset} >Reset</Button>
-          <Button variant="outline-success" onClick={add} >+</Button>
-       </div>
-       <div>
-       <Button variant="outline-success"  onClick={() => onAdd(count)}>Confirmar</Button>
-       </div>
-       </div>
-       
+    <div id="Counter">
+      <div>
+      <button onClick={Add} disabled={cot === stock}>+</button>
+      <h1>{cot}</h1>
+      <button onClick={Res} disabled={cot===inicial}>-</button>
+      </div>
+      <button className='Add' onClick={()=>onAdd(cot)}>Agregar al carrito</button>
     </div>
-  );
+  )
 }
-export default Counter;
+

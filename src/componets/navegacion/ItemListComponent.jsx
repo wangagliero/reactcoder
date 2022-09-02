@@ -1,5 +1,9 @@
 import Cards from './Cards';
-import Counter from './Counter';
+
+
+
+
+
 
 function ItemListComponent  ({greeting}) {
      
@@ -7,8 +11,7 @@ function ItemListComponent  ({greeting}) {
     <>
     <h1>{greeting}</h1>
       <Cards/>
-
-      <Counter />
+      
     </>
     
     
