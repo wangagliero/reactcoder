@@ -17,13 +17,7 @@ function ItemListComponent  ({greeting}) {
      
   return (
     <div>
-      {    
-          loanding?
-               <div>carga</div>
-               :
-               <ItemList Item={products}/>
-      
-      }
+        hola pepe
     </div>
    
     
