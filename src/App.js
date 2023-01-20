@@ -1,27 +1,55 @@
-
+import {React} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  NavBar  from './componets/navegacion/NavBar';
 import ItemListComponent from './componets/navegacion/ItemListComponent';
-import {Counter} from './componets/navegacion/Counter';
+
+
 
 function  App  () {
-  const onAdd =(Cot)=>{
+  return(
+    <>
+     <NavBar/>
+     <ItemListComponent  />
+    </>
+  )
+};
+
+export default App;
+ /* const onAdd =(Cot)=>{
      alert(`agregaste ${Cot} al carrito`)
   }
   
-
   return (
-    <div className='App'> 
-   
-    <NavBar />
+     
+      <div>
+            <NavBar/>
  
     
-    <ItemListComponent greeting={"este mensaje"}/>
+            <ItemListComponent greeting={"este mensaje"}/>
+            <ItemDetailContainer/>
+            <Counter/>
+ 
+
+      </div>
+   
     
-  
-    </div> 
   );
 }
 
-export default App;
+
+ <BrowserRouter> 
+      <Routes>
+      <NavBar />
+      <Route path='/' element={<ItemListComponent greeting={"este mensaje"}/>}/>
+      <Route path='/detail' element={<ItemDetailComponent />}/>
+      <Route path='/counter' element={<Counter />}/>
+
+    <Route path='*' element={  <Navigate to='/' />}/>
+    
+   
+  
+    
+     </Routes>
+    </BrowserRouter> 
+  );*/

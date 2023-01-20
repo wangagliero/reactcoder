@@ -1,5 +1,5 @@
 
-import React from 'react'
+/*import React from 'react'
 import { useState } from 'react'
 
 
@@ -25,3 +25,4 @@ export const Counter = (stock,inicial,onAdd) => {
   )
 }
 
+*/

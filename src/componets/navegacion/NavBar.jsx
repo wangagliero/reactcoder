@@ -1,20 +1,23 @@
-import React from 'react';
+
 import Container from 'react-bootstrap/Container';
+import { AiFillCar } from "react-icons/ai";
+import CarWidget from './CarWidget';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { AiFillCar } from "react-icons/ai";
-import CarWidget from './CarWidget';
+/*import React from 'react';
 
 
 
-function NavBar() {
-  
-  return (
-    
-    <Navbar bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">
+
+C*/
+const NavBar =() => {
+
+   return (
+    <>
+       <Navbar bg="dark" variant="dark" className='barra'>
+       <Container>
+        <Navbar.Brand href="#home" >
           <AiFillCar/>
           Carcomm
           </Navbar.Brand>
@@ -34,14 +37,17 @@ function NavBar() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#">
         
           <CarWidget/>
           </Navbar.Brand>
       </Container>
     </Navbar>
-    
+    </>
   );
+
+    
+    
  
 }
 

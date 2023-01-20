@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import {useEffect}  from 'react';
 import {getArray} from '../Helpers/getArray';
 import {array} from '../../data/data';
-import { ItemList } from './ItemList';
+
 import '../css/ItemListComponets.css';
+
+import {Item} from './Item';
 
 function ItemListComponent  ({greeting}) {
   const [products,setProducts] = useState ([])
@@ -16,12 +18,7 @@ function ItemListComponent  ({greeting}) {
      }, [])
      
   return (
-    <div>
-        hola pepe
-    </div>
-   
-    
-    
+    array.map((item) => <Item {...item}/>)
   );
 }
 
