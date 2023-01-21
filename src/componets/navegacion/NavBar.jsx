@@ -1,6 +1,6 @@
 
 import Container from 'react-bootstrap/Container';
-import { GiPokecog } from "react-icons/gi";
+import { CgPokemon } from "react-icons/cg";
 import CarWidget from './CarWidget';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,28 +13,28 @@ const NavBar =() => {
     <>
        <Navbar bg="primary" variant="primary" className='barra'>
        <Container>
-        <Navbar.Brand href="#home" >
-          <GiPokecog/>
+        <Navbar.Brand href="/" >
+          <CgPokemon/>
           Poke
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">comprar</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/comprar">comprar</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">generacion1</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">generacion2</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">generacion3</NavDropdown.Item>
+              <NavDropdown.Item href="/categoria/generacion1">generacion1</NavDropdown.Item>
+              <NavDropdown.Item href="/categoria/generacion2">generacion2</NavDropdown.Item>
+              <NavDropdown.Item href="/categoria/generacion3">generacion3</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/Card">
               comprar pokemons
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="#">
-        
+        <Navbar.Brand href="card">
+          <link to='./Card'></link>
           <CarWidget/>
           </Navbar.Brand>
       </Container>

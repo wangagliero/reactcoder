@@ -4,20 +4,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import  NavBar  from './componets/navegacion/NavBar';
 import {ItemListComponent} from './componets/navegacion/ItemListComponent';
 import  ItemDetailContainer  from './componets/ItemDetail/ItemDetailContainer';
-import Counter from './componets/navegacion/Counter.jsx';
 import {BrowserRouter,Routes,Route,Navigate} from 'react-router-dom';
-
+import CardConteiner from './componets/navegacion/CardConteiner';
 function  App  () {
   return(
     <BrowserRouter> 
     <NavBar />
       <Routes>
       
-      <Route path='/' element={<ItemListComponent greeting={"este mensaje"}/>}/>
-      <Route path='/detail' element={<ItemDetailContainer />}/>
-      <Route path='/counter' element={<Counter />}/>
+     
+      <Route path='/' element={<ItemListComponent />}/>
+      <Route path='/detail/:detId' element={<ItemDetailContainer />}/>
+      <Route path='/card' element={<CardConteiner/>}/>
+      
 
-    <Route path='*' element={  <Navigate to='/' />}/>
+    <Route path='/' element={  <Navigate to='/' />}/>
     
    
   

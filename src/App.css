@@ -1,4 +1,6 @@
-
+.App{
+    background-image: url(https://st2.depositphotos.com/3213441/12022/v/600/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg);
+}
 .card{
   text-align: center;
   float: left;
@@ -7,6 +9,7 @@
   margin: 40px;
   padding: 20px;
   border: black 2px solid;
+  
 }
 
 
@@ -20,7 +23,7 @@
     width: 300px;
 
 }
-.foto{
+.fotos{
     width:200px;
 
 }
