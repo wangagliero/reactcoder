@@ -11,7 +11,7 @@ const NavBar =() => {
 
    return (
     <>
-       <Navbar bg="dark" variant="dark" className='barra'>
+       <Navbar bg="primary" variant="primary" className='barra'>
        <Container>
         <Navbar.Brand href="#home" >
           <AiFillCar/>
