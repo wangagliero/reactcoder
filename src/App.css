@@ -1,9 +1,36 @@
 
-.carta{
-    border-radius: 50%;
-    text-align: center;
-    align-content: space-between;
-    float: left;
-    margin: 20px;
+.card{
+  text-align: center;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 40px;
+  padding: 20px;
+  border: black 2px solid;
+}
 
+
+
+.card-head{
+    width: 200px;
+    padding: 10px;
+
+}
+.card-body{
+    width: 300px;
+
+}
+.foto{
+    width:200px;
+
+}
+.card-footer{
+    width: 300px;
+
+}
+.boton{
+    border-radius: 20%;
+    border-color: red;
+    width: 100px;
+    text-align: center;
 }

@@ -7,8 +7,6 @@ import  ItemDetailContainer  from './componets/ItemDetail/ItemDetailContainer';
 import Counter from './componets/navegacion/Counter.jsx';
 import {BrowserRouter,Routes,Route,Navigate} from 'react-router-dom';
 
-
-
 function  App  () {
   return(
     <BrowserRouter> 
