@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { getArray } from '../Helpers/getArray';
@@ -30,3 +30,4 @@ export const ItemDetailContainer = () => {
     </div>
   )
 }
+*/

@@ -1,4 +1,4 @@
-
+/*
 
 export const array = [
     {
@@ -40,4 +40,4 @@ export const array = [
         picture: "https://static.retail.autofact.cl/blog/c_url_original.rpbbp8kyezf0rd.jpg",
 
     } 
-]
+]*/

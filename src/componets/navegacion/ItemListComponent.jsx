@@ -1,27 +1,21 @@
-import React, { useState } from 'react';
-import {useEffect}  from 'react';
-import {getArray} from '../Helpers/getArray';
-import {array} from '../../data/data';
 
-import '../css/ItemListComponets.css';
-
-import {Item} from './Item';
-
-function ItemListComponent  ({greeting}) {
-  const [products,setProducts] = useState ([])
-  const [loanding, setLoanding] = useState (true)
-     useEffect(() => {
-       getArray(array)
-        .then(res=>setProducts(res))
-        .catch(err=>console.log(err))
-        .finally(()=> setLoanding(false))
-     }, [])
-     
-  return (
-    array.map((item) => <Item {...item}/>)
-  );
-}
+import { useEffect } from 'react';
+import { gFetch } from '../Helpers/gFetch';
 
 
+ export const ItemListComponent =({saludo}) => {
+ useEffect (()=>{
+  gFetch 
+  .then(respuestaPromesa => {
+   console.log(respuestaPromesa)
+     })
 
-export default ItemListComponent;
+     .catch(err =>console.log(err))
+     .finally(()=> console.log('llegamos'))
+    })
+       return (
+      <div>
+      <h2> saludo </h2>
+      </div>
+     )
+ }

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import '../css/ItemListComponets.css';
 import {Card,Button} from 'react-bootstrap';
 
@@ -22,5 +22,5 @@ export const Item = ({title,description,price,picture}) => {
     </div>
 
   )
-}
+}*/
 
