@@ -23,7 +23,7 @@ const NavBar =() => {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/comprar">comprar</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/categoria/fuego">fuego</NavDropdown.Item>
+              <NavDropdown.Item href="/categoria/fuego">generacion1</NavDropdown.Item>
               <NavDropdown.Item href="/categoria/tierra">tierra</NavDropdown.Item>
               <NavDropdown.Item href="/categoria/agua">agua</NavDropdown.Item>
               <NavDropdown.Divider />

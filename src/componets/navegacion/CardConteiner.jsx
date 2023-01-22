@@ -1,8 +1,9 @@
+import ItemCount from "./Counter";
 
 const CardConteiner = () =>{
   
     return(
-    <div>item</div>
+    <ItemCount/>
     )
   }
   export default CardConteiner;

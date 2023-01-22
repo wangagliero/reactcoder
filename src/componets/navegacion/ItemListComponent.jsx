@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
         gFetch()
         .then(respuestaPromesa => {
           
-          setProductos(respuestaPromesa.filter(items => items.categoria === categoryId.Id ))
+          setProductos(respuestaPromesa.filter(items => items.categoria === categoryId  ))
        })
   
         .catch(err =>console.log(err))
@@ -57,7 +57,7 @@ import { Link } from 'react-router-dom';
                                                   </div>
 
                                                   <div className='card-footer'>
-                                                    <Link to={`/detail/${producto.id}`}>
+                                                    <Link to={`/det/${producto.id}`}>
                                                     <button className='boton'>click</button>
                                                     </Link>
                                                    
