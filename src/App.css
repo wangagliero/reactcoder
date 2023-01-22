@@ -1,18 +1,24 @@
-.App{
-    background-image: url(https://st2.depositphotos.com/3213441/12022/v/600/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg);
-}
+
 .card{
-  text-align: center;
-  float: left;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    float: left;
+    left: 4em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
   width: 300px;
-  height: 200px;
-  margin: 40px;
-  padding: 20px;
-  border: black 2px solid;
+  height: 430px;
+  margin: 20px;
+  transition: all 0.25s;
   
 }
-
-
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
 .card-head{
     width: 200px;
@@ -21,14 +27,18 @@
 }
 .card-body{
     width: 300px;
+    padding: 0 1rem;
+
 
 }
 .fotos{
     width:200px;
+    height: 200px;
 
 }
 .card-footer{
     width: 300px;
+
 
 }
 .boton{

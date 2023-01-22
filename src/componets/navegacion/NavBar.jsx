@@ -23,9 +23,9 @@ const NavBar =() => {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/comprar">comprar</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/categoria/generacion1">generacion1</NavDropdown.Item>
-              <NavDropdown.Item href="/categoria/generacion2">generacion2</NavDropdown.Item>
-              <NavDropdown.Item href="/categoria/generacion3">generacion3</NavDropdown.Item>
+              <NavDropdown.Item href="/categoria/fuego">fuego</NavDropdown.Item>
+              <NavDropdown.Item href="/categoria/tierra">tierra</NavDropdown.Item>
+              <NavDropdown.Item href="/categoria/agua">agua</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/Card">
               comprar pokemons
