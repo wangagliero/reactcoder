@@ -14,7 +14,7 @@ function  App  () {
       <Routes>
       
       <Route path='/' element={<ItemListComponent greeting={"este mensaje"}/>}/>
-      <Route path='/categoria/:CategoryId' element={<ItemListComponent greeting={"este mensaje"}/>}/>
+      <Route path='/categoria/:CategoriaId' element={<ItemListComponent greeting={"este mensaje"}/>}/>
       <Route path='/detail/:detId' element={<ItemDetailContainer />}/>
       <Route path='/card' element={<CardConteiner/>}/>
       

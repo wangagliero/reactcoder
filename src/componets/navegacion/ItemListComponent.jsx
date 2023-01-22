@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { gFetch } from '../Helpers/gFetch';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import ItemList from './ItemList';
 
 
  export const ItemListComponent =( {saludo} ) => {
@@ -44,33 +44,8 @@ import { Link } from 'react-router-dom';
                       <h1>cargando...</h1>
                     </center>
                   :
-                                             <>{productos.map(producto => <div key={producto.id} className='card'>
-
-                                                  <div classname='card-head'>
-                                                    {producto.name}
-                                                  </div>
-
-                                                  <div className='card-body'>
-                                                    <img src={producto.foto} alt='foto' className='fotos'/>
-                                                    <h5>Categoria:{producto.categoria}</h5>
-                                                    <h5>precio:{producto.precio}</h5>
-                                                  </div>
-
-                                                  <div className='card-footer'>
-                                                    <Link to={`/det/${producto.id}`}>
-                                                    <button className='boton'>click</button>
-                                                    </Link>
-                                                   
-                                                    
-                                                    
-                                                    
-                                                    
-                                                   
-                                                  
-                                                  </div>
-                                             </div>)}
-                                           
-                     </>
+                  
+                          <ItemList productos={productos}/>                 
                 }
         </div>
                
