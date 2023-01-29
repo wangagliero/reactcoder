@@ -5,18 +5,19 @@ import ItemDetail from './ItemDetail';
 
 
 const ItemDetailContainer = () =>{
-  const[producto,setProducto] = useState({})
+  const[ producto, setProducto ]  = useState({})
    const {detailId} = useParams()
    console.log(detailId)
    
    useEffect(()=>{
-    gFetch(detailId)
-    .then(resp=>setProducto(resp))
+        gFetch(detailId)
+        
+         .then (resp => setProducto (resp))
    },[])
    console.log(producto)
    
   return(
-   <ItemDetail produto ={producto}/>
+   <ItemDetail producto={producto}/>
   )
 }
 export default ItemDetailContainer
