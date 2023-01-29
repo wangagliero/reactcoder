@@ -5,7 +5,8 @@ import CarWidget from './CarWidget';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import { Link, NavLink } from 'react-router-dom';
+  
 
 const NavBar =() => {
 
@@ -20,22 +21,25 @@ const NavBar =() => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/comprar">comprar</Nav.Link>
+            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/'>comprar</NavLink>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/categoria/fuego">fuego</NavDropdown.Item>
-              <NavDropdown.Item href="/categoria/tierra">tierra</NavDropdown.Item>
-              <NavDropdown.Item href="/categoria/agua">agua</NavDropdown.Item>
-              <NavDropdown.Item href="/categoria/electricidad">electricidad</NavDropdown.Item>
+              <NavLink ClassName={({ isActive })=> isActive ? 'bg-success' : 'bg- dark'} to='/categoria/fuego'>fuego</NavLink>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Card">
+              <NavLink ClassName={({ isActive })=> isActive ? 'bg-success' : 'bg- dark'} to='/categoria/tierra'>tierra</NavLink>
+              <NavDropdown.Divider />
+              <NavLink ClassName={({ isActive })=> isActive ? 'bg-success' : 'bg- dark'}  to='/categoria/agua'>agua</NavLink>
+              <NavDropdown.Divider />
+              <NavLink ClassName={({ isActive })=> isActive ? 'bg-success' : 'bg- dark'} to='categoria/electricidad'>electricidad</NavLink>
+              <NavDropdown.Divider />
+              <NavLink ClassName={({ isActive })=> isActive ? 'bg-success' : 'bg- dark'} to='/'>
               comprar pokemons
-              </NavDropdown.Item>
+              </NavLink>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand href="card">
-          <link to='./Card'></link>
+          <Link to='./Card'></Link>
           <CarWidget/>
           </Navbar.Brand>
       </Container>

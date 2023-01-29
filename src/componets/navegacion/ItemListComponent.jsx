@@ -8,14 +8,14 @@ import ItemList from './ItemList';
  export const ItemListComponent =( {saludo} ) => {
    const [productos,setProductos] = useState([])
    const [loading,setLoading] = useState(true)
-   const {categoryId} = useParams()
+   const {categoriaId} = useParams()
    
     useEffect (()=>{
-      if(categoryId){
+      if(categoriaId){
         gFetch()
         .then(respuestaPromesa => {
           
-          setProductos(respuestaPromesa.filter(items => items.categoria === categoryId  ))
+          setProductos(respuestaPromesa.filter(items => items.categoria === categoriaId  ))
        })
   
         .catch(err =>console.log(err))
@@ -32,7 +32,7 @@ import ItemList from './ItemList';
         .finally(()=> setLoading(false))
       }
        
-    },[categoryId])
+    },[categoriaId])
     
 
     return(

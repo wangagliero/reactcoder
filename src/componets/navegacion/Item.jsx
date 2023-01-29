@@ -13,10 +13,10 @@ const Item = ( {producto }) => {
                 <h5>precio:{producto.precio}</h5>
              </div>
              <div className='card-footer'>
-                  <Link to={`/det/${producto.id}`}>
+                  <Link to={`/detail/${producto.id}`}>
                   <button className='boton'>click</button>
                   </Link>
-   
+    
              </div>
           </div>
     </div>      
