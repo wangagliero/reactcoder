@@ -5,10 +5,13 @@ import  NavBar  from './componets/navegacion/NavBar';
 import {ItemListComponent} from './componets/navegacion/ItemListComponent';
 import  ItemDetailContainer  from './componets/ItemDetail/ItemDetailContainer';
 import {BrowserRouter,Routes,Route,Navigate} from 'react-router-dom';
+import { CartContexProvider } from './contex/CartContext';
 
 
 function  App  () {
   return(
+
+    <CartContexProvider>
     <BrowserRouter> 
     <NavBar />
       <Routes>
@@ -25,6 +28,7 @@ function  App  () {
     
      </Routes>
     </BrowserRouter> 
+    </CartContexProvider>
   );
   
 };
