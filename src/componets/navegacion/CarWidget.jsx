@@ -6,6 +6,7 @@ import {BsFillCartFill } from "react-icons/bs";
 
 function CarWidget() {
     return (
+      
       <BsFillCartFill/>
       
 
