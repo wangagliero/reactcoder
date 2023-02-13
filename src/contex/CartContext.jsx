@@ -1,32 +1,47 @@
-import { useContext } from "react";
+
 import { useState, createContext } from "react";
 
-export const CartContext = createContext ([])
-export const useCardContext = () => useContext(CartContext)
+export const CartContext = createContext ()
+export function CartContexProvider(props){
+   let [Cart,setCart] = useState([]);
 
+   function addItem(item){
+    const isInCart = Cart.some((itemInCart)=> itemInCart.id === item.id);
+     if(isInCart) {
+      let newCart = [...Cart];
+      let index = Cart.findIndex((itemIdCart) => itemIdCart.id === item.id);
 
- export const CartContexProvider = ({children}) =>{
+      alert("ya esta agregado")
+   }
+   else {
+    setCart([...Cart, item]);
+   }
+}
 
-    const [CartList,setCartList] = useState ([])
+function removeItem(idtodel){
+ setCart(Cart.pop());
 
-    const agregarCarrito = (product) =>{
+}
+function clearcart(){
 
-         setCartList( [...CartList, product])
-    }
-    const vaciarCarrito = () =>{
-        setCartList([])
-
-    }
-
-    return(
-        <CartContext.Provider value ={{
-            CartList,
-            agregarCarrito,
-            vaciarCarrito
-        }}>
-           {children}
-        </CartContext.Provider>
-       
-       
-    )
+}
+function getTotalItem(){
+    let total = 0
+    Cart.foreach((item) => (total += 1));
+    return total;
+}
+function getTotalPrecie(){
+    return 999;
+}
+const value = {
+    Cart,
+    addItem,
+    getTotalItem,
+    removeItem,
+    clearcart,
+    getTotalPrecie,
+};
+return(
+    <CartContext.Provider value={value}>{props.children}</CartContext.Provider>
+);
 }

@@ -15,6 +15,7 @@ const ItemDetailContainer = () =>{
          .then (resp => setProducto (resp))
    },[])
    console.log(producto)
+
    
   return(
    <ItemDetail producto={producto}/>

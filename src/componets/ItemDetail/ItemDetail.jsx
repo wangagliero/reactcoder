@@ -1,12 +1,12 @@
 
-import {  useCardContext } from '../../contex/CartContext';
+
 import ItemCount from '../navegacion/Counter';
+
 
 
  
 const ItemDetail =({producto}) => {
-  const {agregarCarrito} = useCardContext ()
-
+  
 
   const onAdd = (cant)=>{
     console.log(cant)

@@ -39,7 +39,7 @@ const NavBar =() => {
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand href="card">
-          <NavLink  ClassName={({isActive})=> isActive ? 'bg-success' : 'bg- dark'} to='/Card'></NavLink>
+          <NavLink  ClassName={({isActive})=> isActive ? 'bg-success' : 'bg- dark'} to='/Cart'></NavLink>
           <CarWidget/>
           </Navbar.Brand>
       </Container>
